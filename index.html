@@ -1,41 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh by Sakib</title>
     <!-- Lexend google font cannected -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwind CSS Init -->
-     <link rel="stylesheet" href="./output/output.css">
+    <link rel="stylesheet" href="./output/output.css" />
+
     <!-- temporary link added for tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
     <!-- header section start -->
-     <header class="container mx-auto mt-6">
-        <!-- navbar start -->
-         <nav class="flex justify-between items-center">
-            <div>
-                <button class="btn btn-success">Blog</button>
-            </div>
-            <div class="flex items-center justify-center gap-x-3">
-                <img src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png" alt="logo">
-                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-            </div>
-            <div class="flex items-center justify-center gap-x-3">
-                <img src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="conin">
-                <h2 class="text-xl"> <span>400</span> BDT</h2>
-            </div>
-         </nav>
-        <!-- navbar end -->
-     </header>
+    <header class="container h-[150px] mx-auto bg-white sticky mt-4 mb-6 pt-6 top-0 shadow-sm max-sm:m-9">
+      <!-- navbar start -->
+      <nav class="flex justify-between mt-6 items-center">
+        <div>
+          <button class="btn btn-success">Blog</button>
+        </div>
+        <div class="flex items-center justify-center gap-x-3">
+          <img
+            src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png"
+            alt="logo"
+          />
+          <h1 class="text-xl font-semibold max-sm:hidden">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center justify-center gap-x-3">
+          <img
+            src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+            alt="conin"
+          />
+          <h2 class="text-xl"><span>400</span> BDT</h2>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
     <!-- header section end -->
+    <!-- main part start -->
+    <main class="container">
+      <!-- button start -->
+      <div class="flex justify-center mt-28 gap-x-4">
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-outline btn-success">Success</button>
+      </div>
+      <!-- button end -->
+      <!-- card section start -->
+      <section class="w-[70%] mx-auto space-y-9 my-6">
+        <!-- picture 1 -->
+        <div class="grid grid-cols-4 space-x-4 items-center">
+          <div class="col-span-2">
+            <img
+              src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/noakhali.png"
+              alt=""
+            />
+          </div>
+          <div class="col-span-2 space-y-2">
+            <button class="btn btn-outline btn-warning">
+              <img
+                src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+                alt=""
+              />
+              <span class="text-gray-600">1200 BDT</span>
+            </button>
+            <h2 class="text-[20px] text-black font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p class="text-[16px] font-[300] text-gray-500">
+              The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            </p>
+            <input
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered input-warning w-full "
+            />
+            <button class="btn btn-success w-full">Donate Now</button>
+          </div>
+        </div>
+        <!-- picture 1 -->
+
+        <!-- picture 2 -->
+        <div class="grid grid-cols-4 space-x-4 items-center">
+            <div class="col-span-2">
+              <img
+                src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/feni.png"
+                alt=""
+              />
+            </div>
+            <div class="col-span-2 space-y-2">
+              <button class="btn btn-outline btn-warning">
+                <img
+                  src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+                  alt=""
+                />
+                <span class="text-gray-600">1200 BDT</span>
+              </button>
+              <h2 class="text-[20px] text-black font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h2>
+              <p class="text-[16px] font-[300] text-gray-500">
+                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+              </p>
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered input-warning w-full "
+              />
+              <button class="btn btn-success w-full">Donate Now</button>
+            </div>
+          </div>
+          <!-- picture 2 -->
+
+
+            <!-- picture 3 -->
+        <div class="grid grid-cols-4 space-x-4 items-center">
+            <div class="col-span-2">
+              <img
+                src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/quota-protest.png"
+                alt=""
+              />
+            </div>
+            <div class="col-span-2 space-y-2">
+              <button class="btn btn-outline btn-warning">
+                <img
+                  src="./B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
+                  alt=""
+                />
+                <span class="text-gray-600">1200 BDT</span>
+              </button>
+              <h2 class="text-[20px] text-black font-bold">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p class="text-[16px] font-[300] text-gray-500">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              </p>
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered input-warning w-full "
+              />
+              <button class="btn btn-success w-full">Donate Now</button>
+            </div>
+          </div>
+          <!-- picture 3 -->
+      </section>
+      <!-- card section end -->
+    </main>
+    <!-- main part end -->
 
     <!-- js file -->
-     <script src="./src/script/theme.js"></script>
-</body>
+    <script src="./src/script/theme.js"></script>
+  </body>
 </html>
