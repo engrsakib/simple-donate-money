@@ -13,10 +13,16 @@ const quataMov = document.getElementById("quata_mov");
 
 // input field
 const inputNoakhaly = document.getElementById("input_noakhaly");
+const inputFeni = document.getElementById("inputFeni");
 
-// date and time function
+// modal function
+const modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
 
-
+function Close() {
+  modal.classList.add("hidden");
+}
 
 // donation function
 function donateButton(e) {
@@ -57,16 +63,45 @@ function donateFunction(e) {
         mainTk.innerText = initializeAmount;
         floodNoakhali.innerText = floodNoakhaliAmount;
 
-        const newDiv = document.createElement('div');
+        const newDiv = document.createElement("div");
         newDiv.innerHTML = `
-            <div class="w-full h-auto p-16 shadow">
+            <div class="w-full h-auto p-16 shadow-md">
                 <p class="text-[20px] font-[700] text-black">${n} Taka is Donate for Flood at Noakhali, Bangladesh</p>
 
                 <p class="text-[16px] font-[300]">Date: ${new Date()}</p>
 
             </div>
-        `
+        `;
         historySectiont.appendChild(newDiv);
+        // the moadl function
+        modal.classList.remove("hidden");
+      }
+    } else {
+      alert("Please Input right amount");
+    }
+  } else if (e.value === "feni") {
+    const n = Number(inputNoakhaly.value);
+    if ((typeof n === "number" && !isNaN(n)) || n <= 0) {
+      if (n > initializeAmount) {
+        alert("You have not enough money");
+      } else {
+        feniAmountTk += n;
+        initializeAmount -= n;
+        mainTk.innerText = initializeAmount;
+        floodNoakhali.innerText = feniAmountTk;
+
+        const newDiv = document.createElement("div");
+        newDiv.innerHTML = `
+            <div class="w-full h-auto p-16 shadow-md">
+                <p class="text-[20px] font-[700] text-black">${n} Taka is Donate for Flood Relief in Feni, Bangladesh </p>
+
+                <p class="text-[16px] font-[300]">Date: ${new Date()}</p>
+
+            </div>
+        `;
+        historySectiont.appendChild(newDiv);
+        // the moadl function
+        modal.classList.remove("hidden");
       }
     } else {
       alert("Please Input right amount");
