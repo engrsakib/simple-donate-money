@@ -80,7 +80,7 @@ function donateFunction(e) {
       alert("Please Input right amount");
     }
   } else if (e.value === "feni") {
-    const n = Number(inputNoakhaly.value);
+    const n = Number(inputFeni.value);
     if ((typeof n === "number" && !isNaN(n)) || n <= 0) {
       if (n > initializeAmount) {
         alert("You have not enough money");
@@ -88,7 +88,7 @@ function donateFunction(e) {
         feniAmountTk += n;
         initializeAmount -= n;
         mainTk.innerText = initializeAmount;
-        floodNoakhali.innerText = feniAmountTk;
+        feniAmount.innerText = feniAmountTk;
 
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
