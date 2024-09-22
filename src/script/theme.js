@@ -7,7 +7,9 @@ const historyBtn = document.getElementById('history_btn');
 const donatinBtn = document.getElementById('donatin_btn');
 // taka
 const mainTk = document.getElementById('main_taka');
-
+const floodNoakhali = document.getElementById('flood_Noakhali');
+const feniAmount = document.getElementById('feni_amount');
+const quataMov = document.getElementById('quata_mov');
 
 // donation function
 function donateButton(e){
@@ -26,5 +28,12 @@ function donateButton(e){
 }
 
 // initilize amount
-
-let initializeAmount = 1789;
+let initializeAmount = 17089;
+let floodNoakhaliAmount = 231232;
+let feniAmountTk = 142341;
+let quataMovTk = 141031;
+// inner
+mainTk.innerText = initializeAmount;
+floodNoakhali.innerText = floodNoakhaliAmount;
+feniAmount.innerText = feniAmountTk;
+quataMov.innerText = quataMovTk;
