@@ -22,7 +22,6 @@ const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 
-
 // modal close button
 function Close() {
   modal.classList.add("hidden");
@@ -144,3 +143,11 @@ function donateFunction(e) {
     }
   }
 }
+
+
+// page swap
+const blog = document.getElementById('blog');
+blog.addEventListener('click', function(){
+    window.location.href = './pages/blog.html';
+});
+
