@@ -56,67 +56,60 @@
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            What is the DOM in JavaScript?
+            What is the Document Object Model (DOM)?
           </div>
           <div class="collapse-content">
             <p>
-              The DOM (Document Object Model) is a programming interface that
-              represents the structure of an HTML or XML document as a tree of
-              objects. Each node in the tree corresponds to a part of the
-              document, such as elements, attributes, and text. JavaScript can
-              interact with the DOM to dynamically manipulate the content and
-              structure of web pages.
+              The Document Object Model (DOM) is a Programming interface for web documents. The DOM representing the strcture of a web pages as a hierarchical tree of objects. Each node has three corresponds to different components of the document, such as elements, attribute and text.  The DOM allows developers to dynamically interact with and manipulate the content and structure of a webpage using various programming languages, most notably JavaScript. 
             </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">
-            How can you select an element in the DOM using JavaScript?
+            How do you select an element from the DOM?
           </div>
           <div class="collapse-content">
             <p>
-              Selecting an element in the DOM involves identifying and
-              referencing specific parts of a web page, such as buttons,
-              headings, or sections. JavaScript provides several methods to
-              select elements based on different criteria, such as their ID,
-              class name, or tag name. This selection allows developers to work
-              with those elements directly, whether to change their content,
-              modify their styles, or respond to user actions.
+              To select an element from the DOM, you can use various methods provided by the DOM API, primarily in JavaScript. Here are some common methods:
+              
+              <li>getElementsByClassName: Selects all elements with a specified class name</li>
+              <li>getElementsByTagName: Selects all elements with a specified tag name</li>
+              <li>querySelector: Selects the first element that matches a specified CSS selector.</li>
+              <li>querySelectorAll: Selects all elements that match a specified CSS selector</li>
             </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">
-            How do you change the text content of a DOM element?
+            What is event delegation in the context of the DOM, and why is it useful?
           </div>
           <div class="collapse-content">
             <p>
-              Changing the text content of a DOM element means updating what is
-              displayed to users on the web page. Each element can hold text,
-              and by targeting a specific element, developers can replace its
-              current text with new content. This is often used to provide
-              feedback to users, such as confirming an action or displaying
-              updated information based on user interactions.
+              Event delegation is a technique in the context of the DOM that allows you to manage a higher level in the DOM hierachy rather than on individuals elemnts.
+
+              when an events occurs on child elemnt, it bubbles up to the parent element. By placing the event listener on the parent.
             </p>
           </div>
 
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div class="collapse-title text-xl font-medium">
-              What are event listeners in the context of the DOM?
+              How do you manipulate an element's attributes and styles using the DOM?
             </div>
             <div class="collapse-content">
               <p>
-                Event listeners are mechanisms that allow developers to specify
-                actions that should happen when a particular event occurs on a
-                DOM element. For instance, if a user clicks a button or submits
-                a form, an event listener can trigger a specific function or
-                response, such as displaying a message or changing the content
-                on the page. This functionality enables interactivity and
-                enhances user experience by making web pages more responsive to
-                user actions.
+                You can manipulate an element's attributes and styles using the DOM through JavaScript. Here’s how you can do both:
+                  <br>
+                <span class="text-gray-400">Manipulating Attributes</span>
+                <li>Getting an Attribute: You can retrieve the value of an attribute using the getAttribute method.</li>
+                <li>Setting an Attribute: You can set or update an attribute using the setAttribute method.</li>
+                <li>Removing an Attribute: To remove an attribute, use the removeAttribute method.</li>
+                <span class="text-gray-400">Manipulating Styles</span>
+                <li>Getting a Style Property: You can access a specific CSS property using the style property.</li>
+                <li>Setting a Style Property: To change the style of an element, directly assign a value to a CSS property.</li>
+                <li>Adding Multiple Styles: You can also add multiple styles at once using a loop or by directly setting properties.</li>
               </p>
             </div>
           </div>
