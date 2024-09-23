@@ -23,6 +23,11 @@ const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 
+// heading
+const noakhaliHead = document.getElementById('noakhaliHead').innerText;
+const FeniHead = document.getElementById('FeniHead').innerText;
+const qutaHead = document.getElementById('qutaHead').innerText;
+
 // modal close button
 function Close() {
   modal.classList.add("hidden");
@@ -72,7 +77,7 @@ function donateFunction(e) {
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
             <div class="w-full h-auto p-16 shadow-md">
-                <p class="text-[20px] font-[700] text-black">${n} Taka is Donate for Flood at Noakhali, Bangladesh</p>
+                <p class="text-[20px] font-[700] text-black">${n} Taka is ${noakhaliHead} </p>
 
                 <p class="text-[16px] font-[300]">Date: ${new Date()}</p>
 
@@ -101,7 +106,7 @@ function donateFunction(e) {
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
             <div class="w-full h-auto p-16 shadow-md">
-                <p class="text-[20px] font-[700] text-black">${n} Taka is Donate for Flood Relief in Feni, Bangladesh </p>
+                <p class="text-[20px] font-[700] text-black">${n} Taka is ${FeniHead} </p>
 
                 <p class="text-[16px] font-[300]">Date: ${new Date()}</p>
 
@@ -130,7 +135,7 @@ function donateFunction(e) {
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
             <div class="w-full h-auto p-16 shadow-md">
-                <p class="text-[20px] font-[700] text-black">${n} Taka is Donate for Aid for Injured in the Quota Movement </p>
+                <p class="text-[20px] font-[700] text-black">${n} Taka is ${qutaHead} </p>
 
                 <p class="text-[16px] font-[300]">Date: ${new Date()}</p>
 
