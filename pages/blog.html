@@ -26,7 +26,7 @@
   <body class="bg-white">
     <!-- header section start -->
     <header
-      class="container h-[150px] mx-auto bg-white sticky lg:mt-4 lg:mb-6 mt-4 pt-6 top-0 shadow-sm"
+      class="container h-[150px] mx-auto sticky backdrop-blur-lg lg:mt-4 lg:mb-6 mt-4 pt-6 top-0 shadow-sm"
     >
       <!-- navbar start -->
       <nav
@@ -57,69 +57,55 @@
     <!-- header section end -->
     <!-- main part start -->
     <main class="container mx-auto m-6">
+      <!-- faq img start -->
+       <section class="flex justify-center items-center">
+        <div class="w-[400px]">
+          <img src="../B10A5-DOM-Quest-Build-and-Manipulate/assets/qna.png" alt="">
+        </div>
+       </section>
+      <!-- faq img end -->
       <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            How can I make a donation?
+            What is the DOM in JavaScript?
           </div>
           <div class="collapse-content">
             <p>
-              You can make a donation through our website by clicking on the
-              "Donate Now" button. This will take you to a secure payment page
-              where you can choose your preferred payment method, enter your
-              details, and complete the donation process. If you prefer, you can
-              also donate via bank transfer or by mailing a check. Please
-              contact us for more information on alternative donation methods.
+              The DOM (Document Object Model) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. Each node in the tree corresponds to a part of the document, such as elements, attributes, and text. JavaScript can interact with the DOM to dynamically manipulate the content and structure of web pages.
             </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">
-            Is my donation tax-deductible?
+            How can you select an element in the DOM using JavaScript?
           </div>
           <div class="collapse-content">
             <p>
-              Yes, donations made to our organization are generally
-              tax-deductible. We are a registered nonprofit organization, and
-              you will receive a receipt for your donation that can be used for
-              tax purposes. We recommend consulting with a tax professional to
-              understand how your donation may affect your individual tax
-              situation.
+              Selecting an element in the DOM involves identifying and referencing specific parts of a web page, such as buttons, headings, or sections. JavaScript provides several methods to select elements based on different criteria, such as their ID, class name, or tag name. This selection allows developers to work with those elements directly, whether to change their content, modify their styles, or respond to user actions.
             </p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">
-            How will my donation be used?
+            How do you change the text content of a DOM element?
           </div>
           <div class="collapse-content">
             <p>
-              Your donation will directly support our programs and initiatives
-              aimed at [specific cause, e.g., alleviating hunger, providing
-              educational resources, etc.]. We prioritize transparency and
-              regularly provide updates on how funds are allocated and the
-              impact of your contribution. You can find detailed reports on our
-              website, or sign up for our newsletter to stay informed about our
-              projects and initiatives.
+              Changing the text content of a DOM element means updating what is displayed to users on the web page. Each element can hold text, and by targeting a specific element, developers can replace its current text with new content. This is often used to provide feedback to users, such as confirming an action or displaying updated information based on user interactions.
             </p>
           </div>
 
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div class="collapse-title text-xl font-medium">
-              Can I set up a recurring donation?
+              What are event listeners in the context of the DOM?
             </div>
             <div class="collapse-content">
               <p>
-                Yes, you can set up a recurring donation through our website.
-                During the donation process, simply select the option for a
-                recurring donation and choose the frequency (monthly, quarterly,
-                etc.) that works best for you. This ensures that your support
-                continues to make an impact over time without the need for you
-                to take further action each period.
+                Event listeners are mechanisms that allow developers to specify actions that should happen when a particular event occurs on a DOM element. For instance, if a user clicks a button or submits a form, an event listener can trigger a specific function or response, such as displaying a message or changing the content on the page. This functionality enables interactivity and enhances user experience by making web pages more responsive to user actions.
               </p>
             </div>
           </div>
