@@ -10658,6 +10658,32 @@ html:has(.drawer-open.drawer-open) {
   height: auto;
 }
 
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-svh {
+  min-height: 100svh;
+}
+
+.min-h-12 {
+  min-height: 3rem;
+}
+
+.min-h-dvh {
+  min-height: 100dvh;
+}
+
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -10670,8 +10696,8 @@ html:has(.drawer-open.drawer-open) {
   width: 400px;
 }
 
-.w-\[500px\] {
-  width: 500px;
+.w-\[450px\] {
+  width: 450px;
 }
 
 .w-\[50px\] {
@@ -10700,10 +10726,6 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[450px\] {
-  width: 450px;
 }
 
 .flex-shrink {
