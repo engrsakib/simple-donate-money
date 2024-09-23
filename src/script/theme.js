@@ -5,6 +5,7 @@ const historySectiont = document.getElementById("history_sectont");
 const donationSection = document.getElementById("donation_Section");
 const historyBtn = document.getElementById("history_btn");
 const donatinBtn = document.getElementById("donatin_btn");
+const emptyTransection = document.getElementById('emptyTransection');
 // taka
 const mainTk = document.getElementById("main_taka");
 const floodNoakhali = document.getElementById("flood_Noakhali");
@@ -78,6 +79,7 @@ function donateFunction(e) {
             </div>
         `;
         historySectiont.appendChild(newDiv);
+        emptyTransection.classList.add('hidden');
         // the moadl function
         modal.classList.remove("hidden");
         modal.classList.add("flex");
@@ -106,6 +108,7 @@ function donateFunction(e) {
             </div>
         `;
         historySectiont.appendChild(newDiv);
+        emptyTransection.classList.add('hidden');
         // the moadl function
         modal.classList.remove("hidden");
         modal.classList.add("flex");
@@ -134,6 +137,7 @@ function donateFunction(e) {
             </div>
         `;
         historySectiont.appendChild(newDiv);
+        emptyTransection.classList.add('hidden');
         // the moadl function
         modal.classList.remove("hidden");
         modal.classList.add("flex");
