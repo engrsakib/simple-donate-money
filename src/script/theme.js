@@ -59,7 +59,7 @@ function donateFunction(e) {
   if (e.value === "fload_noakhali") {
     const n = Number(inputNoakhaly.value);
 
-    if ((typeof n === "number" && !isNaN(n)) && n != " ") {
+    if ((typeof n === "number" && !isNaN(n)) && n != " " && n > 0) {
       if (n > initializeAmount) {
         alert("You have not enough money");
       } else {
@@ -87,7 +87,7 @@ function donateFunction(e) {
     }
   } else if (e.value === "feni") {
     const n = Number(inputFeni.value);
-    if ((typeof n === "number" && !isNaN(n)) && n != " ") {
+    if ((typeof n === "number" && !isNaN(n)) && n != " " && n > 0) {
       if (n > initializeAmount) {
         alert("You have not enough money");
       } else {
@@ -115,7 +115,7 @@ function donateFunction(e) {
     }
   } else if (e.value === "quta") {
     const n = Number(inputQuta.value);
-    if ((typeof n === "number" && !isNaN(n))  && n != " ") {
+    if ((typeof n === "number" && !isNaN(n))  && n != " " && n > 0) {
       if (n > initializeAmount) {
         alert("You have not enough money");
       } else {

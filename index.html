@@ -25,7 +25,7 @@
   </head>
   <body class="bg-white">
     <!-- header section start -->
-    <header class="container h-[150px] mx-auto bg-white sticky lg:mt-4 lg:mb-6 mt-4 pt-6 top-0 shadow-sm">
+    <header class="container h-auto pb-5 mx-auto bg-white sticky lg:mt-4 lg:mb-6 mt-4 pt-6 top-0 shadow-sm">
       <!-- navbar start -->
       <nav class="flex lg:justify-between justify-around lg:mt-6 mt-4 items-center">
         <div>
@@ -47,16 +47,16 @@
         </div>
       </nav>
       <!-- navbar end -->
-    </header>
-    <!-- header section end -->
-    <!-- main part start -->
-    <main class="container min-h-screen">
-      <!-- button start -->
-      <div class="flex justify-center mt-28 gap-x-4">
+        <!-- button start -->
+      <div class="flex justify-center mt-12 gap-x-4">
         <button id="donatin_btn" onclick="donateButton(this)" class="btn btn-success">Donation</button>
         <button id="history_btn" onclick="donateButton(this)" class="btn btn-outline btn-success">History</button>
       </div>
       <!-- button end -->
+    </header>
+    <!-- header section end -->
+    <!-- main part start -->
+    <main class="container mt-14 min-h-screen">
       <!-- card section start -->
       <section id="donation_Section" class="w-[70%] mx-auto space-y-9 my-6">
         <!-- picture 1 -->
@@ -83,7 +83,7 @@
             </p>
             <input id="input_noakhaly"
               type="text"
-              placeholder="Type here"
+              placeholder="write your donate amount"
               class="input input-bordered input-warning w-full "
             />
             <button value="fload_noakhali" onclick="donateFunction(this)" class="btn btn-success w-full">Donate Now</button>
@@ -115,7 +115,7 @@
               </p>
               <input
                 type="text" id="inputFeni"
-                placeholder="Type here"
+                placeholder="write your donate amount"
                 class="input input-bordered input-warning w-full "
               />
               <button value="feni" onclick="donateFunction(this)" class="btn btn-success w-full">Donate Now</button>
@@ -148,7 +148,7 @@
               </p>
               <input
                 type="text" id="inputQuta"
-                placeholder="Type here"
+                placeholder="write your donate amount"
                 class="input input-bordered input-warning w-full "
               />
               <button value="quta" onclick="donateFunction(this)" class="btn btn-success w-full">Donate Now</button>
